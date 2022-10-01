@@ -3,44 +3,86 @@
 <head>
     <style>
         *{
-            margin: 5px;
+            margin: 0;
             padding: 0;
         }
         body{
-            background-color: rgb(23, 20, 20);
+            background-color: #342E2E;
         }
         nav{
             background-color: rgb(23, 20, 20);
-            color: rgb(247, 244, 241);
-           
+            color: rgb(247, 244, 241); 
         }
         nav ul{
             text-align:right;
-            color: antiquewhite;
             list-style-type: none;
         }
+        
         nav ul li{
             display: inline-block;
             padding: 5px 20px;
         }
         nav a{
             text-decoration: none;
-            color:whitesmoke;
+            color:#F2F2F2;
         }
         .hero{
             display:flex;
             align-items: :center;
-            margin:auto;
-            color:rgb(247, 244, 241);
         }
         .hero img{
-            margin: auto;
+            margin:auto;
+			margin-top:4rem;
         }
         .bio{
             width: 50rem;
-            padding: 5rem;
-            
+            padding: 6.5rem;
+			color:#FCFBFB;
+			font-family:Georgia, serif;
         }
+		.bio h1{
+		    padding-bottom:1rem;
+			font-size:2rem;
+		}
+		.skills{
+		    color:#FCFBFB;
+		}
+		.head{
+		    text-align:center;
+			padding-top:5rem;	
+		}
+		.contain{
+		    display:grid;
+			grid-template-columns:repeat(3, 1fr);
+			justify-content:center;
+			align-items: center;
+			text-align: center;
+			grid-gap:1rem;
+		}
+		.skill-title{
+		    display:flex;
+			flex-direction:column;
+			align-items:center;
+			padding:0.5rem;
+		}
+		.img{
+		    width:5rem;
+			height:4rem;
+			position:relative;
+			display:flex;
+			justify-content:center;
+			align-items:center;
+		}
+		.skill-box{
+		    padding:1rem;
+			font-family:Georgia, serif;
+		}
+        .head h1{
+		    font-size:2rem;
+		}
+		.icon{
+		    width:60px;
+		}
     </style>
 </head>
 <body>
@@ -53,10 +95,10 @@
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
-<section  class="hero">
+<section  class="hero" id="about">
     <img src="C:\Users\MY PC\Desktop\task1\port.png"/>
     <div class="bio">
-        <h2>About Me</h2>
+        <h1>About Me</h1>
         <p>
             Hello there! My name is Ananya Sharma. I was born and raised in Bareilly. I completed my 12th from SR International School.
             My 12th percentage was 94.8% . I'm currently pursuing Btech in Computer Science and Engineering from Ajay Kumar Garg Engineering College.
@@ -64,8 +106,57 @@
         </p>
     </div>
 </section>
-<section>
-    <h2>Skills</h2>
+<section class="skills" id="skills">
+    <div class="head">
+    <h1>Skills</h1>
+	</div>
+	<div class="contain">
+	    <div class="skill-box">
+		    <div class="skill-title">
+			    <div class="img">
+				    <img class="icon" src="https://mpng.subpng.com/20190125/wpj/kisspng-computer-icons-html5-scalable-vector-graphics-port-socialpack-chocolate-icon-5c4b3bbcb7d671.680718971548434364753.jpg"/>
+	            </div>
+				<h4>HTML 5</h4>
+			</div>
+			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+		</div>
+		<div class="skill-box">
+		    <div class="skill-title">
+			    <div class="img">
+				    <img class="icon" src="https://banner2.cleanpng.com/20181122/pvr/kisspng-css3-logo-brand-organization-product-5bf6acdf526893.6153573115428927673376.jpg"/>
+	            </div>
+				<h4>CSS 3</h4>
+			</div>
+			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+		</div>
+		<div class="skill-box">
+		    <div class="skill-title">
+			    <div class="img">
+				    <img class="icon"src="https://www.citypng.com/public/uploads/preview/js-javascript-round-logo-icon-png-11662226392lsrrajcm0y.png"/>
+	            </div>
+				<h4>JavaScript</h4>
+			</div>
+			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+		</div>
+		<div class="skill-box">
+		    <div class="skill-title">
+			    <div class="img">
+				    <img class="icon" src="https://e7.pngegg.com/pngimages/465/779/png-clipart-blue-and-white-c-logo-the-c-programming-language-computer-programming-computer-icons-programmer-blue-angle.png"/>
+	            </div>
+				<h4>C</h4>
+			</div>
+			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+		</div>
+		<div class="skill-box">
+		    <div class="skill-title">
+			    <div class="img">
+				    <img class="icon"src="https://pngset.com/images/c-programming-language-logo-label-text-number-symbol-transparent-png-783172.png"/>
+	            </div>
+				<h4>C++</h4>
+			</div>
+			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+		</div>
+	</div>
 </section>
     </body>
 </body>
