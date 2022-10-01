@@ -7,11 +7,12 @@
             padding: 0;
         }
         body{
-            background-color: #342E2E;
+            background-color: #FDD361;
         }
         nav{
             background-color: rgb(23, 20, 20);
             color: rgb(247, 244, 241); 
+			box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
         }
         nav ul{
             text-align:right;
@@ -37,7 +38,7 @@
         .bio{
             width: 50rem;
             padding: 6.5rem;
-			color:#FCFBFB;
+			color:#4A3006;
 			font-family:Georgia, serif;
         }
 		.bio h1{
@@ -45,7 +46,7 @@
 			font-size:2rem;
 		}
 		.skills{
-		    color:#FCFBFB;
+		    color:#4A3006;
 		}
 		.head{
 		    text-align:center;
@@ -53,7 +54,7 @@
 		}
 		.contain{
 		    display:grid;
-			grid-template-columns:repeat(3, 1fr);
+			grid-template-columns:repeat(auto-fill, minmax(400px,1fr));
 			justify-content:center;
 			align-items: center;
 			text-align: center;
@@ -63,25 +64,135 @@
 		    display:flex;
 			flex-direction:column;
 			align-items:center;
-			padding:0.5rem;
+			padding:1rem;
 		}
 		.img{
-		    width:5rem;
-			height:4rem;
+		    width:8rem;
+			height:7rem;
 			position:relative;
 			display:flex;
 			justify-content:center;
 			align-items:center;
+			padding-bottom:0.8rem;
 		}
 		.skill-box{
 		    padding:1rem;
 			font-family:Georgia, serif;
+			font-size:1.05rem;
+			background-color: #B97008;
+            border-radius: 11px;
+            box-shadow: 0 3px 10px #9A835E;
 		}
         .head h1{
-		    font-size:2rem;
+		    font-size:2.3rem;
+			padding:1rem;
 		}
 		.icon{
-		    width:60px;
+		    width:120px;
+		}
+		.project{
+		    color:#4A3006;
+		}
+		.header{
+		    text-align:center;
+			padding-top:5rem;	
+		}
+		.container{
+		    display:grid;
+			grid-template-columns:repeat(auto-fill, minmax(400px, 1fr));
+			justify-content:center;
+			align-items: center;
+			text-align: center;
+			grid-gap:1rem;
+		}
+		.project-title{
+		    display:flex;
+			flex-direction:column;
+			align-items:center;
+			padding:1rem;
+		}
+		.project-title h4{
+		    padding:1.4rem;
+		}
+		.pimg{
+		    width:9rem;
+			height:8rem;
+			position:relative;
+			display:flex;
+			justify-content:center;
+			align-items:center;
+			padding-bottom:0.8rem;
+		}
+		.project-box{
+		    padding:1rem;
+			font-family:Georgia, serif;
+			font-size:1.05rem;
+			background-color: #B97008;
+            border-radius: 11px;
+            box-shadow: 0 3px 10px #9A835E;
+		}
+        .header h1{
+		    font-size:2rem;
+			padding:1rem;
+		}
+		.picon{
+		    width:250px;
+		}
+		.contact {
+            margin-top: 2rem;
+        }
+        .contact h2 {
+            text-align:left;
+            padding:2rem; 
+        }
+        .contact-form-container {
+            max-width: 40.75rem;
+            margin-left:1rem ;
+            padding:0.7rem;
+            border-radius: 5px;
+            box-shadow: 0 3px 10px #9A835E;
+        }
+		.contact-form-container label {
+            line-height: 2.7em;
+            font-weight: var(--bold-font);
+            color: var(--primary-color);
+        }
+
+        .contact-form-container textarea {
+            min-height: 6.25rem;
+            font-size: 14px;
+        }
+        .contact-form-container .input-field {
+            width: 100%;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            border-radius: 5px;
+            border: none;
+            border: 2px outset var(--primary-color);
+            font-size: 0.875rem;
+            outline: none;
+        }
+		footer {
+            background-color: #1D1C1A;
+            padding: 1.25rem;
+            text-align: center;
+            margin: 2rem 0 0;
+		}
+		.simg{
+		    display:inline-block;
+		    width:20px;
+			align-items:center;
+			padding:1rem;
+		    width:4rem;
+			height:3rem;
+			position:relative;	
+		}
+		.contact h2{
+		    color:#4A3006;
+			font-size:2rem;
+		}
+		.copy{
+		    color:#FCFAF4;
 		}
     </style>
 </head>
@@ -158,6 +269,67 @@
 		</div>
 	</div>
 </section>
-    </body>
+<section class="project" id="projects">
+    <div class="header">
+    <h1>Some Of My Recent Projects</h1>
+	</div>
+	<div class="container">
+	    <div class="project-box">
+		    <div class="project-title">
+			    <div class="pimg">
+				    <img class="picon" src="https://i.ytimg.com/vi/Aed5UFfarI8/maxresdefault.jpg"/>
+	            </div>
+				<h4>Blogging Website</h4>
+			</div>
+			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+		</div>
+		<div class="project-box">
+		    <div class="project-title">
+			    <div class="pimg">
+				    <img class="picon" src="https://user-images.githubusercontent.com/47485749/92153141-04ab9680-ede1-11ea-90c6-76e8aea7f9f1.png"/>
+	            </div>
+				<h4>Facebook Clone</h4>
+			</div>
+			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+		</div>
+		<div class="project-box">
+		    <div class="project-title">
+			    <div class="pimg">
+				    <img class="picon"src="https://s3.amazonaws.com/www-inside-design/uploads/2018/05/weather-app-4_feature-983x740.jpg"/>
+	            </div>
+				<h4>Weather App</h4>
+			</div>
+			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+		</div>
+	</div>
+</section>
+<section class="contact" id="contact">
+      <h2>Contact Me</h2>
+      <div class="contact-form-container">
+	      <form>
+            <div class="form-control">
+              <label for="name">Name</label>
+              <input  type="text" id="name" name="sender-name" placeholder="Enter Your Name" class="input-field"/>
+            </div>
+            <div class="form-control">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="sender-email" placeholder="Enter Your Email" class="input-field"/>
+            </div>
+            <div class="form-control">
+              <label for="message">Message</label>
+              <textarea id="message" cols="60 rows="10" placeholder="Enter Your Message" name="message" class="input-field"></textarea>
+            </div>
+            <input type="submit" value="Submit" id="submit-button" class="submit-btn"/>
+          </form>
+      </div>
+</section>
+<footer>
+<div class="socials">
+	    <a href="https://twitter.com/login"><img class="simg" src="https://www.clipartmax.com/png/small/28-282220_281-528-orange-twitter-icon-png.png" alt="Twitter" class="socicon"/></a>
+	    <a href="https://www.instagram.com/"><img class="simg" src="https://simg.nicepng.com/png/small/266-2660297_vector-de-instagram-logo.png" alt="Instagram" class="socicon"/></a>
+	    <a href="https://www.linkedin.com/"><img class="simg" src="https://everything-pr.com/wp-content/uploads/2010/01/linkedin-logo.jpg" alt="Linkedin" class="socicon"/></a>
+	    <a href="https://github.com/"><img class="simg" src="https://banner2.cleanpng.com/20180824/jtl/kisspng-computer-icons-logo-portable-network-graphics-clip-icons-for-free-iconza-circle-social-5b7fe46b0bac53.1999041115351082030478.jpg" alt="Github" class="socicon"/></a>
+        <p class="copy">&copy; Copyright 2022</p>
+</footer>   
 </body>
 </html>
